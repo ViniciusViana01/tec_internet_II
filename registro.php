@@ -26,15 +26,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <body>
     
     
-    <h1>Cadastro de objetos</h1>
+<h1>Cadastro de objetos</h1>
     <form action="" method="post">
         <input type="text" name="nome" placeholder="Nome do Objeto" required><br><br>
         <textarea name="descricao" placeholder="Descrição do Objeto" required></textarea><br>
         <input type="submit" value="Cadastrar">
         
     </form>
+
     <?php if (!empty($mensagem)): ?>
         <p><?= $mensagem ?></p>
+        <a href="visualização.php">Ver Meus Produtos</a>
     <?php endif; ?>
     
 </body>
