@@ -8,7 +8,7 @@
 
 session_start();
 
-//Variaveis 
+//Variaveis     
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $objeto = array(
@@ -36,8 +36,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     <?php if (!empty($mensagem)): ?>
         <p><?= $mensagem ?></p>
-        <a href="visualização.php">Ver Meus Produtos</a>
+        <a href="visualização.php">Ver Produtos Cadastrados</a>
     <?php endif; ?>
-    
+        
 </body>
 </html>
